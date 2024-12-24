@@ -1,18 +1,21 @@
+import Button from "../components/button";
+import TextInput from "../components/text-input"
+
 export default function Hero() {
   return (
-    <div className="flex border">
-      <div className="w-full flex flex-col gap-2 mt-[35vh] border">
-        <h1 className="text-5xl font-bold text-white leading-[64px]">
+    <div className="flex h-screen ">
+      <div className="w-full flex flex-col gap-2 mt-[35vh] ">
+        <h1 className="text-5xl font-bold text-slate-200 leading-[64px]">
           Seus projetos e redes sociais em um único link
         </h1>
-        <h2 className="text-xl leading-6">Crie sua página de projetos e compartilhe com o mundo
+        <h2 className="text-xl leading-6 text-slate-300">Crie sua página de projetos e compartilhe com o mundo
           <br />
-          Acompanhe o engajamento com o Analytics de cliques
+          <span className="text-slate-400">Acompanhe o engajamento com o Analytics de cliques</span>
         </h2>
         <div className="flex items-center gap-2 w-full mt-[10vh]">
           <span className="text-white text-xl">projectinbio.com</span>
-          <input type="text" />
-          <button>Criar agora</button>
+          <TextInput placeholder="Seu Link" />
+          <Button >Criar Agora</Button>
         </div>
         <div className="w-full flex items-center justify-center bg-[radial-gradient(circle_at_50%_50%,#4B2DBB, transparent_55%)] ">
           <div className="relative">
@@ -23,7 +26,7 @@ export default function Hero() {
             <div className="absolute top-[20%] -left-[45%] -z-10">
               {/* <ProjectCard /> */}
             </div>
-            <div className="absolute top-[5%] -left-[55%] -z-10">
+            <div className="absolute -top-[5%] -left-[55%] -z-10">
               {/* <ProjectCard /> */}
             </div>
           </div>
